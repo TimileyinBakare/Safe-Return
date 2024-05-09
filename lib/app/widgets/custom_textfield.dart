@@ -1,7 +1,6 @@
-
 import 'package:flutter/material.dart';
 
-import '../core/color.dart';
+import '../constants/color.dart';
 
 class CustomTextField extends StatelessWidget {
   final String? hint;
@@ -9,6 +8,10 @@ class CustomTextField extends StatelessWidget {
   final Widget? suffixIcon;
   final Color? iconColor;
   final bool obscure;
+  final TextAlign? hintAlign;
+  final bool? fillColor;
+  final TextInputType? keyboard;
+  final bool? isdensed;
   final TextEditingController? controller;
   const CustomTextField({
     super.key,
@@ -17,7 +20,11 @@ class CustomTextField extends StatelessWidget {
     this.iconColor,
     this.suffixIcon,
     this.controller,
+    this.hintAlign = TextAlign.start,
     this.obscure = false,
+    this.fillColor = true,
+    this.isdensed = true,
+    this.keyboard = TextInputType.text,
   });
 
   @override
@@ -25,7 +32,15 @@ class CustomTextField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: obscure,
+      keyboardType: keyboard,
+      textAlign: hintAlign!,
       decoration: InputDecoration(
+        isDense: isdensed,
+        contentPadding: const EdgeInsets.all(8),
+        filled: fillColor,
+        fillColor: const Color(
+          AppColor.fillColor,
+        ),
         hintText: hint,
         prefixIcon: prefixIcon,
         prefixIconColor: iconColor,

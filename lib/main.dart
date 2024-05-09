@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:safereturn/src/modules/auth/onboarding.dart';
+import 'package:safereturn/app/config/routes/app_route.dart';
+import 'package:safereturn/app/constants/color.dart';
+import 'package:safereturn/app/modules/onboarding/view/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +16,12 @@ class MyApp extends StatelessWidget {
       title: 'Safe Area',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
+          seedColor: const Color(AppColor.primaryColor),
         ),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      initialRoute: AppRoute.splash,
+      onGenerateRoute: AppRoute.generalRoute,
     );
   }
 }

@@ -1,13 +1,15 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:safereturn/src/core/color.dart';
-import 'package:safereturn/src/widgets/custom_button.dart';
+import 'package:safereturn/app/config/routes/app_route.dart';
+import 'package:safereturn/app/constants/color.dart';
+import 'package:safereturn/app/widgets/custom_button.dart';
 
-import '../../../core/asset.dart';
+import '../../../constants/asset.dart';
 import '../../../widgets/custom_textfield.dart';
 
 class Login extends StatelessWidget {
+  static const routeName = "login";
   const Login({super.key});
 
   @override
@@ -88,10 +90,14 @@ class Login extends StatelessWidget {
                       alignment: Alignment.topRight,
                       child: FadeInLeft(
                         duration: const Duration(seconds: 1),
-                        child: const Text(
-                          "Forgot Password?",
-                          style: TextStyle(
-                            decoration: TextDecoration.underline,
+                        child: InkWell(
+                          onTap: () => Navigator.pushNamed(
+                              context, AppRoute.forgretpass),
+                          child: const Text(
+                            "Forgot Password?",
+                            style: TextStyle(
+                              decoration: TextDecoration.underline,
+                            ),
                           ),
                         ),
                       ),
@@ -160,8 +166,10 @@ class Login extends StatelessWidget {
                     ),
                     FadeInLeft(
                       duration: const Duration(seconds: 1),
-                      child: const CustomButton(
-                        color: Color(AppColor.secondaryColor),
+                      child: CustomButton(
+                        onclick: () =>
+                            Navigator.pushNamed(context, AppRoute.register),
+                        color: const Color(AppColor.secondaryColor),
                         fontWeight: FontWeight.normal,
                         text: "Sign Up",
                       ),

@@ -1,13 +1,16 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:safereturn/src/core/color.dart';
-import 'package:safereturn/src/modules/auth/view/login.dart';
+import 'package:safereturn/app/config/routes/app_route.dart';
+import 'package:safereturn/app/constants/color.dart';
+import 'package:safereturn/app/modules/auth/view/login.dart';
 
-import '../../core/asset.dart';
-import '../../widgets/custom_button.dart';
+import '../../../constants/asset.dart';
+import '../../../widgets/custom_button.dart';
 
 class SplashScreen extends StatefulWidget {
+  static const routeName = "splashscreen";
+
   const SplashScreen({super.key});
 
   @override
@@ -63,10 +66,10 @@ class _SplashScreenState extends State<SplashScreen> {
                   fontWeight: FontWeight.bold,
                   color: const Color(AppColor.primaryColor),
                   text: "Let's get started",
-                  onclick: () => Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return const Login();
-                  })),
+                  onclick: () => Navigator.pushReplacementNamed(
+                    context,
+                    AppRoute.login,
+                  ),
                 ),
               ),
               Flexible(
