@@ -16,11 +16,9 @@ I hope you like it.
 ## Design and Media
 - [Figma Design Link](https://www.figma.com/community/file/1347293828810010889/safe-return)
 
-| <img src="assets/media/screenshot1.png" width="200">           | <img src="assets/media/screenshot2.png" width="200"> |
+| <img src="assets/media/screenshot1.png" width="200"> |<img src="assets/media/screenshot2.png" width="200"> |
 
-| <img src="assets/media/screenshot3.png" width="200">           | <img src="assets/media/screenshot4.png" width="200"> |
-
-
+| <img src="assets/media/screenshot3.png" width="200"> | <img src="assets/media/screenshot4.png" width="200"> |
 
 
 ## Features
