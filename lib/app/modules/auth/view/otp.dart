@@ -9,7 +9,6 @@ import 'package:safereturn/app/constants/color.dart';
 import 'package:safereturn/app/widgets/custom_button.dart';
 
 import '../../../constants/asset.dart';
-import '../../../widgets/custom_textfield.dart';
 
 class Otp extends StatelessWidget {
   static const routeName = "otp";

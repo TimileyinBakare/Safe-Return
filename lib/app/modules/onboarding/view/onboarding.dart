@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:safereturn/app/config/routes/app_route.dart';
 import 'package:safereturn/app/constants/color.dart';
-import 'package:safereturn/app/modules/auth/view/login.dart';
 
 import '../../../constants/asset.dart';
 import '../../../widgets/custom_button.dart';

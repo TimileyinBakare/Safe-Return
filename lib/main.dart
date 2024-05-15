@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:safereturn/app/config/routes/app_route.dart';
 import 'package:safereturn/app/constants/color.dart';
-import 'package:safereturn/app/modules/onboarding/view/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
