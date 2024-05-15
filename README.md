@@ -15,7 +15,9 @@ I hope you like it.
 
 ## Design and Media
 - [Figma Design Link](https://www.figma.com/community/file/1347293828810010889/safe-return)
-- [Video Demos](#)
+- [Video Demos](assets/medi/authentication_video.mov)
+- 
+
 
 ## Features
 - Real-time location tracking of children.
@@ -42,12 +44,13 @@ flutter test
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
+## Contact
+   For any inquiries or support, please contact:
+   Email: bakaretim18@gmail.com
+   LinkedIn: https://linkedin.com/blackwadud
 
-For any inquiries or support, please contact:
 
-Email: bakaretim18@gmail.com
-LinkedIn: hhtps://linkedin.com/blackwadud
+
 
 
 
