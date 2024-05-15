@@ -15,8 +15,9 @@ I hope you like it.
 
 ## Design and Media
 - [Figma Design Link](https://www.figma.com/community/file/1347293828810010889/safe-return)
-- [Video Demos](assets/medi/authentication_video.mov)
-- 
+- ![screenshot](assets/media/screenshot1.png)
+- ![screenshot](assets/media/screenshot2.png)
+- ![screenshot](assets/media/screenshot3.png)
 
 
 ## Features
